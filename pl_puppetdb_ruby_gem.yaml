@@ -1,0 +1,5 @@
+name: pl-puppetdb-ruby gem
+filename: pl-puppetdb-ruby-${pl_puppetdb_ruby_version}.gem
+url: https://rubygems.org/gems/pl-puppetdb-ruby
+require:
+  - github_austb_puppetdb_ruby_repo

@@ -1,0 +1,5 @@
+name: puppet-modulebuilder gem
+filename: puppet-modulebuilder-${puppet_modulebuilder_version}.gem
+url: https://rubygems.org/gems/puppet-modulebuilder
+require:
+  - puppet_modulebuilder_repo

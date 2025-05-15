@@ -1,0 +1,4 @@
+name: cron_core_module
+url: https://forge.puppetlabs.com/v3/files/puppetlabs-cron_core-${cron_core_version}.tar.gz
+require:
+  - github_puppetlabs_cron_core_repo

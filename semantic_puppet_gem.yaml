@@ -1,0 +1,5 @@
+name: semantic_puppet gem
+filename: semantic_puppet-${semantic_puppet_version}.gem
+url: https://rubygems.org/gems/semantic_puppet
+require:
+  - github_puppetlabs_semantic_puppet_repo

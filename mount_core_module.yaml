@@ -1,0 +1,4 @@
+name: mount_core_module
+url: https://forge.puppetlabs.com/v3/files/puppetlabs-mount_core-${mount_core_version}.tar.gz
+require:
+  - github_puppetlabs_mount_core_repo

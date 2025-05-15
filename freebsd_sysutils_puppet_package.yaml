@@ -1,0 +1,18 @@
+name: FreeBSD Puppet package
+filename: puppet-${puppet_version}.pkg
+require:
+  - github_puppetlabs_puppet_repo
+  - augeas_core_module
+  - cron_core_module
+  - host_core_module
+  - mount_core_module
+  - scheduled_task_module
+  - selinux_core_module
+  - sshkeys_core_module
+  - yumrepo_core_module
+  - zfs_core_module
+  - zone_core_module
+depends:
+  - freebsd_devel_rubygem_puppet_resource_api_package
+  - freebsd_devel_rubygem_semantic_puppet_package
+  - freebsd_sysutils_rubygem_facter_package

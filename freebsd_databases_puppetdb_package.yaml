@@ -1,0 +1,4 @@
+name: FreeBSD puppetdb package
+filename: puppetdb-${puppetdb_version}.pkg
+require:
+  - puppetdb_tarball

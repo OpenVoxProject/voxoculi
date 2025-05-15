@@ -1,0 +1,4 @@
+name: zfs_core_module
+url: https://forge.puppetlabs.com/v3/files/puppetlabs-zfs_core-${zfs_core_version}.tar.gz
+require:
+  - github_puppetlabs_zfs_core_repo

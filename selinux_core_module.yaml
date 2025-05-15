@@ -1,0 +1,4 @@
+name: selinux_core_module
+url: https://forge.puppetlabs.com/v3/files/puppetlabs-selinux_core-${selinux_core_version}.tar.gz
+require:
+  - github_puppetlabs_selinux_core_repo

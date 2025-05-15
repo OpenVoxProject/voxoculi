@@ -1,0 +1,4 @@
+name: augeas_core_module
+url: https://forge.puppetlabs.com/v3/files/puppetlabs-augeas_core-${augeas_core_version}.tar.gz
+require:
+  - github_puppetlabs_augeas_core_repo

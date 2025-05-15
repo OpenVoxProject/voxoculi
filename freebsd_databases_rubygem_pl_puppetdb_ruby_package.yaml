@@ -1,0 +1,4 @@
+name: FreeBSD pl-puppetdb-ruby package
+filename: rubygem-pl-puppetdb-ruby-${_version}.pkg
+require:
+  - pl_puppetdb_ruby_gem

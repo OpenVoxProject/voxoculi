@@ -1,0 +1,4 @@
+name: pypuppetdb python package
+url: https://pypi.org/project/pypuppetdb/
+require:
+  - github_puppetlabs_pypuppetdb_repo

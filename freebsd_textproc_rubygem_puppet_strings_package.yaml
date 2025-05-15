@@ -1,0 +1,4 @@
+name: FreeBSD puppet-strings package
+filename: rubygems-puppet-strings-${puppet_strings_version}.pkg
+require:
+  - puppet_strings_gem

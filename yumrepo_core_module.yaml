@@ -1,0 +1,4 @@
+name: yumrepo_core_module
+url: https://forge.puppetlabs.com/v3/files/puppetlabs-yumrepo_core-${yumrepo_core_version}.tar.gz
+require:
+  - github_puppetlabs_yumrepo_core_repo

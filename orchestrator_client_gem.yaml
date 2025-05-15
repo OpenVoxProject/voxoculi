@@ -1,0 +1,5 @@
+name: orchestrator_client gem
+filename: orchestrator_client-${orchestrator_client_version}.gem
+url: https://rubygems.org/gems/orchestrator_client
+require:
+  - github_puppetlabs_orchestrator_client_repo

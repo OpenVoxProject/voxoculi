@@ -1,0 +1,4 @@
+name: FreeBSD orchestrator_client package
+filename: rubygems-orchestrator_client-${orchestrator_client_version}.pkg
+require:
+  - orchestrator_client_gem

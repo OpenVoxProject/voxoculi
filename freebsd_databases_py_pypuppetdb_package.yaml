@@ -1,0 +1,4 @@
+name: FreeBSD py-pypuppetdb package
+filename: py-pypuppetdb-${pypuppetdb_version}.pkg
+require:
+  - pypuppetdb_pypi

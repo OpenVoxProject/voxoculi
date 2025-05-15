@@ -1,0 +1,4 @@
+name: sshkeys_core_module
+url: https://forge.puppetlabs.com/v3/files/puppetlabs-sshkeys_core-${sshkeys_core_version}.tar.gz
+require:
+  - github_puppetlabs_sshkeys_core_repo

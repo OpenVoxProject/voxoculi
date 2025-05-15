@@ -1,0 +1,5 @@
+name: Facter gem
+filename: facter-${facter_version}.gem
+url: https://rubygems.org/gems/facter
+require:
+  - github_puppetlabs_facter_repo

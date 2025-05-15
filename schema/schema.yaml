@@ -1,0 +1,33 @@
+title: Artifact
+description: An artifact
+type: object
+properties:
+  name:
+    type: string
+    description: A human name for the artifact
+  url:
+    type: string
+    description: The location of the artifact
+  filename:
+    type: string
+    description: The filename for a generated artifact
+  require:
+    type: array
+    description: Hard dependency to another component (required to build)
+    items:
+      type: string
+  depends:
+    type: array
+    description: Soft dependency to another component (required to run)
+    items:
+      type: string
+  archived:
+    type: boolean
+    description: Is this project archived (no longer developped)
+  broken:
+    type: string
+    description: The reason why some artifact cannot be built
+
+additionalProperties: false
+required:
+  - name

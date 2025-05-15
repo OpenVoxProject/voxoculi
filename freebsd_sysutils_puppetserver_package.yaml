@@ -1,0 +1,8 @@
+name: FreeBSD puppetserver package
+filename: puppetserver-${puppetserver_version}.pkg
+require:
+  - puppetserver_tarball
+depends:
+  - freebsd_devel_rubygem_semantic_puppet_package
+  - freebsd_sysutils_puppet_package
+  - freebsd_sysutils_rubygem_puppetserver_ca_package

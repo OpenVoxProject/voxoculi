@@ -1,0 +1,4 @@
+name: FreeBSD puppetdb-terminus package
+filename: puppetdb-terminus-${puppetdb_version}.pkg
+require:
+  - puppetdb_tarball

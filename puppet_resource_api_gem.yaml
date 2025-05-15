@@ -1,0 +1,5 @@
+name: puppet-resource_api gem
+filename: puppet_resource_api-${puppet_resource_api_version}.gem
+url: https://rubygems.org/gems/puppet-resource_api
+require:
+  - github_puppetlabs_puppet_resource_api_repo

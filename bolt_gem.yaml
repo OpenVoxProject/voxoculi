@@ -1,0 +1,5 @@
+name: Bolt gem
+filename: bolt-${bolt_version}.gem
+url: https://rubygems.org/gems/bolt
+require:
+  - github_puppetlabs_bolt_repo

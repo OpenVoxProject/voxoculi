@@ -1,0 +1,5 @@
+name: FreeBSD pxp-agent package
+filename: pxp-agent-${pxp_agent_version}.pkg
+broken: Does not build with a modern compiler
+require:
+  - github_puppetlabs_pxp_agent_repo

@@ -1,0 +1,4 @@
+name: PuppetServer tarball
+url: https://downloads.puppet.com/puppet/puppetserver-${puppetserver_version}.tar.gz
+require:
+  - github_puppetlabs_puppetserver_repo

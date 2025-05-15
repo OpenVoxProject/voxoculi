@@ -1,0 +1,4 @@
+name: FreeBSD rubygem-hocon package
+filename: rubygem-hocon-${hocon_version}.pkg
+require:
+  - hocon_gem

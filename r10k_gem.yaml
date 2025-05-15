@@ -1,0 +1,5 @@
+name: r10k gem
+filename: r10k-${r10k_version}.gem
+url: https://rubygems.org/gems/r10k
+require:
+  - github_puppetlabs_r10k_repo

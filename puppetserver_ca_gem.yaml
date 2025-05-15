@@ -1,0 +1,5 @@
+name: puppetserver-ca gem
+filename: puppetserver-ca-${puppetserver_ca_version}.gem
+url: https://rubygems.org/gems/puppetserver-ca
+require:
+  - github_puppetlabs_puppetserver_ca_repo

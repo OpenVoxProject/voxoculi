@@ -1,0 +1,4 @@
+name: FreeBSD modulebuilder package
+filename: rubygem-modulebuilder-${modulebuilder_version}.pkg
+require:
+  - puppet_modulebuilder_gem

@@ -1,0 +1,4 @@
+name: FreeBSD r10k package
+filename: rubygems-r10k-${r10k_version}.yaml
+require:
+  - r10k_gem

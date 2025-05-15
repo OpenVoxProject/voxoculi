@@ -1,0 +1,4 @@
+name: scheduled_task_module
+url: https://forge.puppetlabs.com/v3/files/puppetlabs-scheduled_task-${scheduled_task_version}.tar.gz
+require:
+  - github_puppetlabs_scheduled_task_repo

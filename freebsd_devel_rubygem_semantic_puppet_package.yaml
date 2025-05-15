@@ -1,0 +1,4 @@
+name: FreeBSD semantic_puppet package
+filename: rubygems-semantic-puppet-${semantic_puppet_version}.pkg
+require:
+  - semantic_puppet_gem

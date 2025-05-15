@@ -1,0 +1,5 @@
+name: puppetdb_cli gem
+filename: puppetdb_cli-${puppetdb_cli_version}.gem
+url: https://rubygems.org/gems/puppetdb_cli
+require:
+  - github_puppetlabs_puppetdb_cli_repo

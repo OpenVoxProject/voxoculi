@@ -1,0 +1,4 @@
+name: FreeBSD puppetserver-ca package
+filename: rubygem-puppetserver-ca-${puppetserver_ca_version}.pkg
+require:
+  - puppetserver_ca_gem

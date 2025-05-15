@@ -1,0 +1,5 @@
+name: Hocon gem
+filename: hocon-${hocon_version}.gem
+url: https://rubygems.org/gems/hocon
+require:
+  - github_puppetlabs_ruby_hocon_repo

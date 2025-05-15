@@ -1,0 +1,5 @@
+name: puppet-strings gem
+filename: puppet-strings-${puppet_strings_version}.gem
+url: https://rubygems.org/gems/puppet-strings
+require:
+  - github_puppetlabs_puppet_strings_repo

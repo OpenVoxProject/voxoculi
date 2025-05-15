@@ -1,0 +1,4 @@
+name: PuppetDB tarball
+url: https://downloads.puppet.com/puppetdb/puppetdb-${puppetdb_version}.tar.gz
+require:
+  - github_puppetlabs_puppetdb_repo

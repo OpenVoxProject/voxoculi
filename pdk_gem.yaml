@@ -1,0 +1,5 @@
+name: PDK gem
+filename: pdk-${pdk_version}.gem
+url: https://rubygems.org/gems/pdk
+require:
+  - github_puppetlabs_pdk_repo

@@ -1,0 +1,7 @@
+name: FreeBSD PDK package
+filename: rubygem-pdk-${pdk_version}.pkg
+require:
+  - pdk_gem
+depends:
+  - freebsd_sysutils_rubygem_facter_package
+  - freebsd_devel_rubygem_puppet_modulebuilder_package
