@@ -1,0 +1,19 @@
+name: OpenVoxProject/openvox-agent repository
+url: https://github.com/openvoxproject/openvox-agent
+require:
+  - github_openvoxproject_facter_repo
+  - github_puppetlabs_augeas_core_repo
+  - github_puppetlabs_cron_core_repo
+  - github_puppetlabs_host_core_repo
+  - github_puppetlabs_mount_core_repo
+  - github_puppetlabs_scheduled_task_repo
+  - github_puppetlabs_selinux_core_repo
+  - github_puppetlabs_sshkeys_core_repo
+  - github_puppetlabs_yumrepo_core_repo
+  - github_puppetlabs_zfs_core_repo
+  - github_puppetlabs_zone_core_repo
+  - openssl_fips
+  - github_openvoxproject_puppet_resource_api_repo
+  - puppet_runtime
+  - github_openvoxproject_puppet
+  - pxp_agent

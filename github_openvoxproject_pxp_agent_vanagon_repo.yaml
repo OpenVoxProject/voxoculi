@@ -1,0 +1,11 @@
+name: openvoxproject/pxp-agent-vanagon repository
+url: https://github.com/openvoxproject/pxp-agent-vanagon
+require:
+  - github_openvoxproject_cpp_hocon_repo
+  - github_openvoxproject_cpp_pcp_client_repo
+  - github_openvoxproject_leatherman_repo
+  - github_openvoxproject_nssm_repo
+  - puppet_runtime
+  - github_openvoxproject_pxp_agent_repo
+depends:
+  - github_puppetlabs_pxp_agent_vanagon_repo

@@ -1,0 +1,4 @@
+name: openvoxproject/puppet-ca-bundle repository
+url: https://github.com/openvoxproject/puppet-ca-bundle
+require:
+  - github_puppetlabs_puppet_ca_bundle_repo

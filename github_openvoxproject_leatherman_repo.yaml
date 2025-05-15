@@ -1,0 +1,4 @@
+name: openvoxproject/leatherman repository
+url: https://github.com/OpenVoxProject/leatherman
+depends:
+  - github_puppetlabs_leatherman_repo

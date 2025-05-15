@@ -1,0 +1,4 @@
+name: openvoxproject/puppet-resource_api repository
+url: https://github.com/openvoxproject/puppet-resource_api
+depends:
+  - github_puppetlabs_puppet_resource_api_repo
