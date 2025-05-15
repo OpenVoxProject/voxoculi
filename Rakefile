@@ -38,15 +38,15 @@ class Artifact
   end
 end
 
-file "packaging.svg" => "packaging.dot" do
-  sh "dot -Tsvg -o packaging.svg packaging.dot"
+file "voxoculi.svg" => "voxoculi.dot" do |t|
+  sh "dot -Tsvg -o #{t.name} #{t.prerequisites.join(" ")}"
 end
 
-file "packaging.dot" => Dir["*.yaml", "templates/*.dot.erb"] do
-  puts "GEN packaging.dot"
+file "voxoculi.dot" => Dir["*.yaml", "templates/*.dot.erb"] do |t|
+  puts "GEN #{t.name}"
   @artifacts = Dir["*.yaml"].map { |yaml| Artifact.new(yaml) }
 
-  File.write("packaging.dot", ERB.new(File.read("./templates/graph.dot.erb"), trim_mode: "-").result(binding))
+  File.write(t.name, ERB.new(File.read("./templates/graph.dot.erb"), trim_mode: "-").result(binding))
 end
 
 desc "Check syntax"
@@ -54,4 +54,4 @@ task "lint" do
   sh "check-jsonschema --schemafile schema/schema.yaml *.yaml"
 end
 
-task default: "packaging.svg"
+task default: "voxoculi.svg"

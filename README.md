@@ -13,6 +13,14 @@ This repository intend to:
 
 Beyond the packages build in the OpenVoxProject organization, this repository welcome documentation of how artifacts for the openvox packages are built for projects outisde the organization.
 
+## Rendering metadata
+
+We currently have a rake task to generate `voxoculi.svg` (the default rake task with build it):
+
+```
+$ rake
+```
+
 ## Extending metadata
 
 All this project is about providing metadata about artifacts and the tools that produce them.  In order to make this process as manageable as possible, update the schema in `schema/shema.yaml` to document your new field before adding them to the various .yaml files.  You can check that all files pass validation with:
