@@ -1,0 +1,4 @@
+name: json-schema gem
+url: https://rubygems.org/gems/json-schema
+require:
+  - github_voxpupuli_json_schema_repo

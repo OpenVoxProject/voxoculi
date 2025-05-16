@@ -1,0 +1,4 @@
+name: puppet_forge gem
+url: https://rubygems.org/gems/puppet_forge
+require:
+  - github_puppetlabs_forge_ruby_repo

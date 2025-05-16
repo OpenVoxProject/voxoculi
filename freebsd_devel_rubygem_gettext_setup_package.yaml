@@ -1,0 +1,3 @@
+name: FreeBSD gettext-setup package
+require:
+  - gettext_setup_gem

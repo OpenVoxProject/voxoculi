@@ -3,3 +3,7 @@ filename: pdk-${pdk_version}.gem
 url: https://rubygems.org/gems/pdk
 require:
   - github_puppetlabs_pdk_repo
+depends:
+  - puppet_modulebuilder_gem
+  - json_schema_gem
+  - puppet_forge_gem

@@ -2,3 +2,5 @@ name: FreeBSD puppet_resource_api package
 filename: rubygem-puppet_resource_api-${puppet_resource_api_version}.pkg
 require:
   - puppet_resource_api_gem
+depends:
+  - freebsd_devel_rubygem_hocon_package

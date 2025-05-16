@@ -3,3 +3,6 @@ filename: puppet-${puppet_version}.gem
 url: https://rubygems.org/gems/puppet
 require:
   - github_puppetlabs_puppet_repo
+depends:
+  - facter_gem
+  - puppet_resource_api_gem

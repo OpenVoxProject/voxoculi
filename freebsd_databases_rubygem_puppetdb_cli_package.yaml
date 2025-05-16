@@ -2,3 +2,5 @@ name: FreeBSD puppetdb-cli package
 filename: rubygem-puppetdb_cli-${puppetdb_cli_version}.pkg
 require:
   - puppetdb_cli_gem
+depends:
+  - freebsd_databases_rubygem_pl_puppetdb_ruby_package

@@ -1,0 +1,4 @@
+name: gettext-setup gem
+url: https://rubygems.org/gems/gettext-setup
+require:
+  - github_puppetlabs_gettext_setup_gem_repo

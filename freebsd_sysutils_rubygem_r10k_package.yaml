@@ -2,3 +2,6 @@ name: FreeBSD r10k package
 filename: rubygems-r10k-${r10k_version}.yaml
 require:
   - r10k_gem
+depends:
+  - freebsd_sysutils_rubygem_puppet_forge_package
+  - freebsd_devel_rubygem_gettext_setup_package
