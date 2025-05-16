@@ -1,0 +1,4 @@
+name: openvoxproject/cpp-hocon repository
+url: https://github.com/OpenVoxProject/cpp-hocon
+depends:
+  - github_puppetlabs_cpp_hocon_repo

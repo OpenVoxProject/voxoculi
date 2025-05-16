@@ -1,0 +1,5 @@
+name: Debian AIO Openvox Agent Package
+filename: openvox-agent_${openvox_agent_version}.deb
+url: https://apt.voxpupuli.org/
+require:
+  - github_openvoxproject_openvox_agent_repo
