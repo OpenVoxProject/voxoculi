@@ -1,6 +1,6 @@
 <% require.each do |requirement| -%>
-  <%= requirement %> -> <%= id %> [weight=1]
+  <%= requirement.id %> -> <%= id %> [weight=1]
 <% end -%>
 <% depends.each do |requirement| -%>
-  <%= requirement %> -> <%= id %> [style=dotted weight=0]
+  <%= requirement.id %> -> <%= id %> [style=dotted weight=0]
 <% end -%>

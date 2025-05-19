@@ -1,0 +1,79 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'erb'
+require 'optparse'
+require 'yaml'
+
+# A data structure to hold artifact information
+class Artifact
+  attr_reader :id
+
+  def initialize(filename)
+    @id = File.basename(filename, '.yaml')
+    @data = YAML.load_file(filename)
+  end
+
+  def name
+    @data['name']
+  end
+
+  def filename
+    @data['filename']
+  end
+
+  def depends
+    @data['depends'] || []
+  end
+
+  def require
+    @data['require'] || []
+  end
+
+  def url
+    @data['url']
+  end
+
+  def node
+    ERB.new(File.read('./templates/node.dot.erb'), trim_mode: '-').result(binding)
+  end
+
+  def edges
+    ERB.new(File.read('./templates/edges.dot.erb'), trim_mode: '-').result(binding)
+  end
+end
+
+options = {
+  output: $stdout
+}
+
+OptionParser.new do |opts|
+  opts.banner = 'Usage: filter [options]'
+
+  opts.on('-o', '--output=FILE', 'Output file') do |o|
+    options[:output] = File.open(o, 'w')
+  end
+
+  opts.on('-h', '--help', 'Show this message') do
+    puts opts
+    exit
+  end
+end.parse!
+
+@artifacts = Dir['*.yaml'].map do |yaml|
+  o = Artifact.new(yaml)
+  [o.id, o]
+end.to_h
+
+@artifacts.each_value do |artifact|
+  artifact.require.map! do |dep|
+    @artifacts[dep]
+  end
+  artifact.depends.map! do |dep|
+    @artifacts[dep]
+  end
+end
+
+@artifacts = @artifacts.values
+
+options[:output].write(ERB.new(File.read('./templates/graph.dot.erb'), trim_mode: '-').result(binding))
