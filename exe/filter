@@ -8,10 +8,54 @@ require 'yaml'
 # A data structure to hold artifact information
 class Artifact
   attr_reader :id
+  attr_accessor :filtered
 
   def initialize(filename)
     @id = File.basename(filename, '.yaml')
     @data = YAML.load_file(filename)
+    @filtered = false
+  end
+
+  def match_filter(compounds)
+    compounds.all? do |key, value|
+      if value.match?(%r{\A/.*/\z})
+        send(key).match?(Regexp.new(value[1..-2]))
+      else
+        send(key) == value
+      end
+    end
+  end
+
+  def filter_up!
+    @filtered = :direct
+
+    depends.each(&:indirect_filter_up!)
+    require.each(&:indirect_filter_up!)
+  end
+
+  def indirect_filter_up!
+    @filtered ||= :indirect
+
+    depends.each(&:indirect_filter_up!)
+    require.each(&:indirect_filter_up!)
+  end
+
+  def filter_down!(artifacts)
+    @filtered = :direct
+
+    artifacts.each do |artifact|
+      artifact.indirect_filter_down!(artifacts) if artifact.depends.include?(self)
+      artifact.indirect_filter_down!(artifacts) if artifact.require.include?(self)
+    end
+  end
+
+  def indirect_filter_down!(artifacts)
+    @filtered ||= :indirect
+
+    artifacts.each do |artifact|
+      artifact.indirect_filter_down!(artifacts) if artifact.depends.include?(self)
+      artifact.indirect_filter_down!(artifacts) if artifact.require.include?(self)
+    end
   end
 
   def name
@@ -44,7 +88,9 @@ class Artifact
 end
 
 options = {
-  output: $stdout
+  output: $stdout,
+  filter_by: {},
+  tainted_by: {}
 }
 
 OptionParser.new do |opts|
@@ -52,6 +98,14 @@ OptionParser.new do |opts|
 
   opts.on('-o', '--output=FILE', 'Output file') do |o|
     options[:output] = File.open(o, 'w')
+  end
+
+  opts.on('-f', '--filter-by=COMPOUND', 'Filter components and their parents') do |f|
+    options[:filter_by] = f.split(',').map { |c| c.split('=') }.to_h
+  end
+
+  opts.on('-t', '--tainted-by=COMPOUND', 'Filter components and their descendants') do |t|
+    options[:tainted_by] = t.split(',').map { |c| c.split('=') }.to_h
   end
 
   opts.on('-h', '--help', 'Show this message') do
@@ -75,5 +129,29 @@ end.to_h
 end
 
 @artifacts = @artifacts.values
+
+unless options[:filter_by].empty?
+  @artifacts.each do |artifact|
+    artifact.filter_up! if artifact.match_filter(options[:filter_by])
+  end
+
+  @artifacts.delete_if do |artifact|
+    !artifact.filtered
+  end
+
+  @artifacts.each { |artifact| artifact.filtered = false }
+end
+
+unless options[:tainted_by].empty?
+  @artifacts.each do |artifact|
+    artifact.filter_down!(@artifacts) if artifact.match_filter(options[:tainted_by])
+  end
+
+  @artifacts.delete_if do |artifact|
+    !artifact.filtered
+  end
+
+  @artifacts.each { |artifact| artifact.filtered = false }
+end
 
 options[:output].write(ERB.new(File.read('./templates/graph.dot.erb'), trim_mode: '-').result(binding))
