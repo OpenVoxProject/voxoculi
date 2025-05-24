@@ -1,0 +1,5 @@
+name: RedHat AIO Openvox Agent Package
+filename: openvox-agent_${openvox_agent_version}.rpm
+url: https://yum.voxpupuli.org/
+require:
+  - github_openvoxproject_openvox_agent_repo

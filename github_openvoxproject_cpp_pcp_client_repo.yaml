@@ -1,0 +1,4 @@
+name: openvoxproject/cpp-pcp-client repository
+url: https://github.com/OpenVoxProject/cpp-pcp-client
+depends:
+  - github_puppetlabs_cpp_pcp_client_repo

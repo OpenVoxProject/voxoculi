@@ -16,11 +16,13 @@ properties:
     description: Hard dependency to another component (required to build)
     items:
       type: string
+      pattern: "\\A[a-zA-Z0-9_]+\\z"
   depends:
     type: array
     description: Soft dependency to another component (required to run)
     items:
       type: string
+      pattern: "\\A[a-zA-Z0-9_]+\\z"
   archived:
     type: boolean
     description: Is this project archived (no longer developped)

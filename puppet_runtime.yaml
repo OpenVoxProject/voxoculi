@@ -1,0 +1,4 @@
+name: puppet-runtime
+url: https://s3.osuosl.org/openvox-artifacts/puppet-runtime/202504291/
+require:
+  - github_openvoxproject_puppet_ca_bundle_repo

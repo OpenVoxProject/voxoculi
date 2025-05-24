@@ -1,0 +1,4 @@
+name: FreeBSD openvoxdb-terminus package
+filename: openvoxdb-terminus-${puppetdb_version}.pkg
+require:
+  - openvoxdb_tarball

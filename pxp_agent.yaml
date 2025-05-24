@@ -1,0 +1,4 @@
+name: pxp-agent
+url: https://s3.osuosl.org/openvox-artifacts/pxp-agent/202504291/
+require:
+  - github_openvoxproject_pxp_agent_vanagon_repo

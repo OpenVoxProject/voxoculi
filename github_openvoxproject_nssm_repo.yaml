@@ -1,0 +1,4 @@
+name: openvoxproject/nssm repository
+url: https://github.com/OpenVoxProject/nssm
+depends:
+  - github_puppetlabs_nssm_repo

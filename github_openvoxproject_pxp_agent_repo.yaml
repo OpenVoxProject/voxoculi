@@ -1,0 +1,4 @@
+name: openvoxproject/pxp-agent
+url: https://github.com/OpenVoxProject/pxp-agent
+depends:
+  - github_puppetlabs_pxp_agent_repo

@@ -1,0 +1,4 @@
+name: FreeBSD openvoxdb package
+filename: openvoxdb-${puppetdb_version}.pkg
+require:
+  - openvoxdb_tarball
