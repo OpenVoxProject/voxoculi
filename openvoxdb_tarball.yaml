@@ -1,0 +1,4 @@
+name: OpenvoxDB tarball
+url: https://artifacts.voxpupuli.org/puppetdb/${puppetdb_version}/puppetdb-${puppetdb_version}.tar.gz
+require:
+  - github_openvoxproject_puppetdb_repo

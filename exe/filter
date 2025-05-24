@@ -121,10 +121,10 @@ end.to_h
 
 @artifacts.each_value do |artifact|
   artifact.require.map! do |dep|
-    @artifacts[dep]
+    @artifacts.fetch(dep)
   end
   artifact.depends.map! do |dep|
-    @artifacts[dep]
+    @artifacts.fetch(dep)
   end
 end
 
