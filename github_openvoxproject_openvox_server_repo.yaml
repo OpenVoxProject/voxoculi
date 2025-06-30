@@ -1,0 +1,4 @@
+name: openvoxproject/openvox-server repository
+url: https://github.com/openvoxproject/openvox-server
+depends:
+  - github_puppetlabs_puppetserver_repo
