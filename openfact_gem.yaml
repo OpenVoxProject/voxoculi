@@ -1,0 +1,7 @@
+name: OpenFact gem
+filename: openfact-${openfact_version}.gem
+url: https://rubygems.org/gems/openfact
+require:
+  - github_openvoxproject_openfact_repo
+depends:
+  - hocon_gem

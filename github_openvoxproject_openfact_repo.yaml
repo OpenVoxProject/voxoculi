@@ -1,0 +1,4 @@
+name: openvoxproject/openfact repository
+url: https://github.com/openvoxproject/openfact
+depends:
+  - github_puppetlabs_facter_repo
