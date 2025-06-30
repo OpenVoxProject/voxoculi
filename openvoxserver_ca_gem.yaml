@@ -1,0 +1,7 @@
+name: openvoxserver-ca gem
+filename: openvoxserver-ca-${openvoxserver_ca_version}.gem
+url: https://rubygems.org/gems/openvoxserver-ca
+require:
+  - github_openvoxproject_openvoxserver_ca_repo
+depends:
+  - openfact_gem
