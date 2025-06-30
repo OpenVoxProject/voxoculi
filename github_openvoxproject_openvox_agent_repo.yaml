@@ -15,5 +15,5 @@ require:
   - openssl_fips
   - github_openvoxproject_puppet_resource_api_repo
   - puppet_runtime
-  - github_openvoxproject_puppet
+  - github_openvoxproject_openvox_repo
   - pxp_agent
