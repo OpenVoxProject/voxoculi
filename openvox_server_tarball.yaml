@@ -1,4 +1,4 @@
 name: openvox-server tarball
-url: https://artifacts.voxpupuli.org/puppetserver/${puppetserver}/puppetserver-${puppetserver_version}.tar.gz
+url: https://artifacts.voxpupuli.org/openvox-server/${openvox_server_version}/openvox-server-${openvox_server_version}.tar.gz
 require:
-  - github_openvoxproject_puppetserver_repo
+  - github_openvoxproject_openvox_server_repo

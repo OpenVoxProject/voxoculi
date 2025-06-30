@@ -1,0 +1,4 @@
+name: openvoxproject/openvoxserver-ca repository
+url: https://github.com/openvoxproject/openvoxserver-ca
+depends:
+  - github_puppetlabs_puppetserver_ca_repo

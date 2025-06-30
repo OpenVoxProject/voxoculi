@@ -1,7 +1,7 @@
 name: FreeBSD openvox-agent package
 filename: openvox-agent-${puppet_version}.pkg
 require:
-  - github_openvox_puppet_repo
+  - github_openvoxproject_openvox_repo
   - augeas_core_module
   - cron_core_module
   - host_core_module

@@ -1,4 +1,0 @@
-name: openvoxproject/puppet repository
-url: https://github.com/openvoxproject/puppet
-depends:
-  - github_puppetlabs_puppet_repo

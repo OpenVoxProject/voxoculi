@@ -1,0 +1,8 @@
+name: OpenVox gem
+filename: openvox-${openvox_version}.gem
+url: https://rubygems.org/gems/openvox
+require:
+  - github_openvoxproject_openvox_repo
+depends:
+  - openfact_gem
+  - puppet_resource_api_gem

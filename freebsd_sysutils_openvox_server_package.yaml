@@ -1,5 +1,5 @@
 name: FreeBSD openvox-server package
-filename: openvox-server-${puppetserver_version}.pkg
+filename: openvox-server-${openvox_server_version}.pkg
 require:
   - openvox_server_tarball
 depends:
