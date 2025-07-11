@@ -1,0 +1,12 @@
+name: FreeBSD OpenBolt package
+future: true
+filename: rubygems-openbolt-${bolt_version}.pkg
+require:
+  - openbolt_gem
+depends:
+  - freebsd_devel_rubygem_puppet_resource_api_package
+  - freebsd_net_rubygem_orchestrator_client_package
+  - freebsd_sysutils_openvox_agent_package
+  - freebsd_sysutils_rubygem_r10k_package
+  - freebsd_textproc_rubygem_puppet_strings_package
+  - freebsd_sysutils_rubygem_hiera_eyaml_package

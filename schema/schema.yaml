@@ -5,6 +5,9 @@ properties:
   name:
     type: string
     description: A human name for the artifact
+  future:
+    type: boolean
+    description: If true, this component does not exist at the moment it is added, but will be created in the future
   url:
     type: string
     description: The location of the artifact

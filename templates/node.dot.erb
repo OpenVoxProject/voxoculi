@@ -1,6 +1,10 @@
   <%= id %> [
     label = "<%= name %>\n<%= filename %>"
     shape = box
+<% if future? -%>
+    color = "gray"
+    fontcolor = "gray"
+<% end -%>
 <% if url -%>
     URL   = "<%= url %>"
 <% end -%>
