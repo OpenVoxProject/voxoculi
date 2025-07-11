@@ -8,3 +8,4 @@ depends:
   - freebsd_sysutils_puppet_package
   - freebsd_sysutils_rubygem_r10k_package
   - freebsd_textproc_rubygem_puppet_strings_package
+  - freebsd_sysutils_rubygem_hiera_eyaml_package

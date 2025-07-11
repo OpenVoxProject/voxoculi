@@ -1,0 +1,4 @@
+name: FreeBSD hiera-eyaml package
+filename: rubygems-hiera-eyaml-${hiera_eyaml_version}.pkg
+require:
+  - hiera_eyaml_gem
