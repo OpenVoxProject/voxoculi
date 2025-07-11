@@ -1,0 +1,4 @@
+name: OpenVoxProject/openbolt repository
+url: https://github.com/OpenVoxProject/openbolt
+depends:
+  - github_puppetlabs_bolt_repo

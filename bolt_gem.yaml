@@ -3,3 +3,10 @@ filename: bolt-${bolt_version}.gem
 url: https://rubygems.org/gems/bolt
 require:
   - github_puppetlabs_bolt_repo
+depends:
+  - hiera_eyaml_gem
+  - orchestrator_client_gem
+  - puppet_gem
+  - puppet_resource_api_gem
+  - puppet_strings_gem
+  - r10k_gem

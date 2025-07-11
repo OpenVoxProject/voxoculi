@@ -1,0 +1,5 @@
+name: hiera-eyaml gem
+filename: hiera-eyaml-${hiera_eyaml_version}.gem
+url: https://rubygems.org/gems/hiera-eyaml
+require:
+  - github_voxpupuli_hiera_eyaml_repo

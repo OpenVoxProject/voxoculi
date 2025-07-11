@@ -1,0 +1,13 @@
+name: OpenBolt gem
+future: true
+filename: openbolt-${openbolt_version}.gem
+url: https://rubygems.org/gems/openbolt
+require:
+  - github_openvoxproject_openbolt_repo
+depends:
+  - hiera_eyaml_gem
+  - orchestrator_client_gem
+  - openvox_gem
+  - puppet_resource_api_gem
+  - puppet_strings_gem
+  - r10k_gem

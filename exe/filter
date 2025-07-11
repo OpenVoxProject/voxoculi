@@ -78,6 +78,10 @@ class Artifact
     @data['url']
   end
 
+  def future?
+    @data['future'] || false
+  end
+
   def node
     ERB.new(File.read('./templates/node.dot.erb'), trim_mode: '-').result(binding)
   end
