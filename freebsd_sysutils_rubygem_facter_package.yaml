@@ -1,4 +1,4 @@
-name: FreeBSD package
+name: FreeBSD facter package
 filename: facter-${facter_version}.pkg
 require:
   - facter_gem

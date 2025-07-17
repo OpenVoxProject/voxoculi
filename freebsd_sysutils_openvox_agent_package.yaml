@@ -15,4 +15,4 @@ require:
 depends:
   - freebsd_devel_rubygem_puppet_resource_api_package
   - freebsd_devel_rubygem_semantic_puppet_package
-  - freebsd_sysutils_rubygem_facter_package
+  - freebsd_sysutils_rubygem_openfact_package
