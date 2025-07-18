@@ -5,4 +5,4 @@ require:
 depends:
   - freebsd_devel_rubygem_semantic_puppet_package
   - freebsd_sysutils_openvox_agent_package
-  - freebsd_sysutils_rubygem_puppetserver_ca_package
+  - freebsd_sysutils_rubygem_openvoxserver_ca_package

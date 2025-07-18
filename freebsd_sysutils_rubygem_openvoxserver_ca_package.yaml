@@ -1,0 +1,6 @@
+name: FreeBSD openvoxserver-ca package
+filename: rubygem-openvoxserver-ca-${openvoxserver_ca_version}.pkg
+depends:
+  - freebsd_sysutils_rubygem_openfact_package
+require:
+  - openvoxserver_ca_gem

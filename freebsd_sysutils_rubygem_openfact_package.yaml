@@ -1,0 +1,4 @@
+name: FreeBSD OpenFact package
+filename: openfact-${openfact_version}.pkg
+require:
+  - openfact_gem
